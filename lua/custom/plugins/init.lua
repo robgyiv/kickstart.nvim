@@ -80,16 +80,15 @@ return {
             return true
           end,
         },
+        suggestion = { enabled = false },
+        panel = { enabled = false },
       }
     end,
   },
   {
     'zbirenbaum/copilot-cmp',
     config = function()
-      require('copilot_cmp').setup {
-        suggestion = { enabled = false },
-        panel = { enabled = false },
-      }
+      require('copilot_cmp').setup {}
     end,
   },
   { 'akinsho/git-conflict.nvim', version = '*', config = true },
